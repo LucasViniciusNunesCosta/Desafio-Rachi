@@ -1,0 +1,194 @@
+:root{
+    --color-blue: #108fe3;
+    --color-gray: #6E7275;
+    --color-bgroud-white: #eff8ff;
+}
+*{
+    font-family: arial;
+}
+body{
+    margin: 0;
+}
+.font_destaque{
+   font-size: 1.5rem; 
+}
+.container__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 14px;
+    margin-right: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+    height: 8vh;
+}
+.container__header > .header__menu > ul{
+    display: flex;
+}
+.container__header > .header__menu > ul > li{
+    list-style-type: none;
+    margin-right: 1rem;
+    color: #6E7275;
+}
+.container__banner{
+    background-color: #eff8ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+}
+.container__banner > .banner{
+    padding: 38px 20px;
+}
+.container__banner > .banner> .banner__text > p{
+    font-size: 3.4rem;
+    color: #293145;
+    font-weight: bold;
+}
+.container__banner > .banner > button{
+    background-color: #108fe3;
+    color: #fff;
+    border: none;
+    padding: 1.1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.container__servicos{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container__servicos > h2{
+    text-align: center;
+}
+
+.container__servicos> .container__options__services{
+    display: flex;
+    justify-content: space-around;
+}
+.container__servicos> .container__options__services > .options__services__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container__download{
+    background-color: #eff8ff;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.container__download > .download__description > span{
+    color: #6E7275;
+}
+.container__download > .download__description > .download__options{
+    margin-top: 1rem;
+}
+.container__download > .download__description > .download__options > img{
+    margin-right: .8rem;
+}
+.container__planos{
+    background-color: #fff;
+    height: 80vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.container__planos >.planos__description{
+    text-align: center;
+}
+.container__planos > .planos__options{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    height: 60%;
+}
+.container__planos > .planos__options >.planos__options__card{
+    height: 95%;
+    width: 20%;
+    padding: 2rem;
+    background-color: #eff8ff;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+.container__planos > .planos__options >.planos__options__card:nth-child(2){
+    height: 100%;
+    width: 20%;
+    padding: 2rem;
+    background-color: #464f65;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.container__planos > .planos__options >.planos__options__card > .planos__options__card__btn > button{
+    background-color: #108fe3;
+    border: none;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 50px;
+    width: 8rem;
+    font-size: 1rem;
+}
+.container__contato{
+    height: 40vh;
+    background: url("contact-background.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    gap: 2rem;
+}
+
+.container__contato > .contato__campo > input{
+    height: 2rem;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #fff;
+    margin-right: 2rem;
+}
+.container__contato > .contato__campo > input:focus{
+    outline: none;
+}
+
+.container__contato > .contato__campo > button{
+    border: none;
+    background-color: #108fe3;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+.rodape{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape a{
+    text-decoration: none;
+    color: #108fe3;
+    font-weight: bold;
+}
