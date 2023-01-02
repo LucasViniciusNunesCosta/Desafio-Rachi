@@ -9,9 +9,19 @@
 body{
     margin: 0;
 }
-.font_destaque{
-   font-size: 1.5rem; 
+.titulos_destaque{
+    font-size: 1.7rem;
 }
+.substitulos_destaque{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.fontes_desfocadas{
+    color: var(--color-gray);
+    
+}
+
+/*NAVIGATION*/
 .container__header{
     display: flex;
     align-items: center;
@@ -29,8 +39,10 @@ body{
 .container__header > .header__menu > ul > li{
     list-style-type: none;
     margin-right: 1rem;
-    color: #6E7275;
+    color: var(--color-gray);
 }
+
+/*BANNER*/
 .container__banner{
     background-color: #eff8ff;
     display: flex;
@@ -47,7 +59,7 @@ body{
     font-weight: bold;
 }
 .container__banner > .banner > button{
-    background-color: #108fe3;
+    background-color: var(--color-blue);
     color: #fff;
     border: none;
     padding: 1.1rem 2.5rem;
@@ -55,11 +67,14 @@ body{
     font-weight: bolder;
     font-size: 1rem;
 }
+
+/*SERVICOS*/
 .container__servicos{
     height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 1.5rem;
 }
 .container__servicos > h2{
     text-align: center;
@@ -75,6 +90,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+.container__servicos> .container__options__services > .options__services__item > p{
+    font-weight: 540;
+}
+.container__servicos> .container__options__services > .options__services__item > span{
+    color: var(--color-gray);
+}
+
+/*DOWNLOADS*/
 .container__download{
     background-color: #eff8ff;
     height: 60vh;
@@ -92,10 +115,12 @@ body{
 .container__download > .download__description > .download__options > img{
     margin-right: .8rem;
 }
+
+/*PLANOS*/
 .container__planos{
     background-color: #fff;
     height: 80vh;
-    padding: 2rem;
+    padding-bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +165,7 @@ body{
     text-align: center;
 }
 .container__planos > .planos__options >.planos__options__card > .planos__options__card__btn > button{
-    background-color: #108fe3;
+    background-color: var(--color-blue);
     border: none;
     padding: 1rem;
     color: #fff;
@@ -148,6 +173,8 @@ body{
     width: 8rem;
     font-size: 1rem;
 }
+
+/*CONTATO*/
 .container__contato{
     height: 40vh;
     background: url("contact-background.png");
@@ -176,11 +203,13 @@ body{
 
 .container__contato > .contato__campo > button{
     border: none;
-    background-color: #108fe3;
+    background-color: var(--color-blue);
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 50px;
 }
+
+/*RODAPE*/
 .rodape{
     height: 7vh;
     display: flex;
@@ -189,6 +218,6 @@ body{
 }
 .rodape a{
     text-decoration: none;
-    color: #108fe3;
+    color: var(--color-blue);
     font-weight: bold;
 }
