@@ -7,7 +7,7 @@
     font-family: arial;
 }
 body{
-    margin: 0;
+    margin: 0px;
 }
 .titulos_destaque{
     font-size: 1.7rem;
@@ -19,6 +19,9 @@ body{
 .fontes_desfocadas{
     color: var(--color-gray);
     
+}
+.font_precos{
+    font-size: 1.4rem;
 }
 
 /*NAVIGATION*/
@@ -150,7 +153,7 @@ body{
     text-align: center;
     
 }
-.container__planos > .planos__options >.planos__options__card:nth-child(2){
+.container__planos > .planos__options >.planos__options__card:hover{
     height: 100%;
     width: 20%;
     padding: 2rem;
@@ -177,7 +180,7 @@ body{
 /*CONTATO*/
 .container__contato{
     height: 40vh;
-    background: url("contact-background.png");
+    background: url("images/contact-background.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,9 +190,13 @@ body{
     gap: 2rem;
 }
 
+.container__contato > .contato__campo{
+    width: 100%;
+}
+
 .container__contato > .contato__campo > input{
     height: 2rem;
-    width: 50%;
+    width: 40%;
     border: none;
     border-bottom: 1px solid #fff;
     background-color: transparent;
