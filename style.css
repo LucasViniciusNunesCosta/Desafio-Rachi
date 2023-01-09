@@ -29,8 +29,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: 135px;
+    margin-right: 135px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: #fff;
@@ -38,11 +38,11 @@ body{
 }
 .container__header > .header__menu > ul{
     display: flex;
+    gap: 66px;
 }
 .container__header > .header__menu > ul > li{
     list-style-type: none;
     margin-right: 1rem;
-    color: var(--color-gray);
 }
 
 /*BANNER*/
@@ -79,24 +79,24 @@ body{
     justify-content: center;
     padding-bottom: 1.5rem;
 }
-.container__servicos > h2{
+.container__servicos > .servicos__titulo{
     text-align: center;
 }
 
-.container__servicos> .container__options__services{
+.container__servicos> .container__options-services{
     display: flex;
     justify-content: space-around;
 }
-.container__servicos> .container__options__services > .options__services__item{
+.container__servicos> .container__options-services > .options-services__item{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container__servicos> .container__options__services > .options__services__item > p{
+.container__servicos> .container-options-services > .options-services__item > p{
     font-weight: 540;
 }
-.container__servicos> .container__options__services > .options__services__item > span{
+.container__servicos> .container__options-services > .options-services__item > span{
     color: var(--color-gray);
 }
 
@@ -139,7 +139,7 @@ body{
     gap: 2rem;
     height: 60%;
 }
-.container__planos > .planos__options >.planos__options__card{
+.container__planos > .planos__options >.planos__options-card{
     height: 95%;
     width: 20%;
     padding: 2rem;
@@ -153,21 +153,12 @@ body{
     text-align: center;
     
 }
-.container__planos > .planos__options >.planos__options__card:hover{
+.container__planos > .planos__options >.planos__options-card:nth-child(2){
     height: 100%;
-    width: 20%;
-    padding: 2rem;
     background-color: #464f65;
-    margin-right: 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     color: #fff;
-    text-align: center;
 }
-.container__planos > .planos__options >.planos__options__card > .planos__options__card__btn > button{
+.container__planos > .planos__options >.planos__options-card > .options-card__btn > button{
     background-color: var(--color-blue);
     border: none;
     padding: 1rem;
@@ -196,7 +187,7 @@ body{
 
 .container__contato > .contato__campo > input{
     height: 2rem;
-    width: 40%;
+    width: 25%;
     border: none;
     border-bottom: 1px solid #fff;
     background-color: transparent;
