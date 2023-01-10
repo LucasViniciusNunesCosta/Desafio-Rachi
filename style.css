@@ -9,16 +9,23 @@
 body{
     margin: 0px;
 }
-.titulos_destaque{
-    font-size: 1.7rem;
+h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #293145;
 }
-.substitulos_destaque{
-    font-size: 1.5rem;
-    font-weight: bold;
+h3{
+    font-size: 18px;
 }
-.fontes_desfocadas{
+
+.fonte-desfocada{
     color: var(--color-gray);
-    
+    font-size: 18px;
+}
+p{
+    color: #fff;
+    font-size: 18px;
 }
 .font_precos{
     font-size: 1.4rem;
@@ -56,10 +63,11 @@ body{
 .container__banner > .banner{
     padding: 38px 20px;
 }
-.container__banner > .banner> .banner__text > p{
-    font-size: 3.4rem;
+.container__banner > .banner> .banner__text > h1{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
     color: #293145;
-    font-weight: bold;
 }
 .container__banner > .banner > button{
     background-color: var(--color-blue);
@@ -122,7 +130,6 @@ body{
 /*PLANOS*/
 .container__planos{
     background-color: #fff;
-    height: 80vh;
     padding-bottom: 3rem;
     display: flex;
     justify-content: center;
@@ -133,14 +140,22 @@ body{
 .container__planos >.planos__description{
     text-align: center;
 }
+.container__planos >.planos__options > .planos__options-card > .options-card__plano > h3{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: #293145;
+}
+.container__planos >.planos__options > .planos__options-card:nth-child(2) > .options-card__plano > h3{
+    color: #fff;
+}
 .container__planos > .planos__options{
     display: flex;
     justify-content: center;
     gap: 2rem;
-    height: 60%;
 }
 .container__planos > .planos__options >.planos__options-card{
-    height: 95%;
+    height: 470px;
     width: 20%;
     padding: 2rem;
     background-color: #eff8ff;
@@ -154,7 +169,7 @@ body{
     
 }
 .container__planos > .planos__options >.planos__options-card:nth-child(2){
-    height: 100%;
+    height: 500px;
     background-color: #464f65;
     color: #fff;
 }
@@ -164,7 +179,7 @@ body{
     padding: 1rem;
     color: #fff;
     border-radius: 50px;
-    width: 8rem;
+    width: 230px;
     font-size: 1rem;
 }
 
@@ -180,7 +195,9 @@ body{
     color: #fff;
     gap: 2rem;
 }
-
+.container__contato > .contato__text > h2{
+    color: #fff;
+}
 .container__contato > .contato__campo{
     width: 100%;
 }
