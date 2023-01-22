@@ -11,14 +11,14 @@
   <body>
 
     <!--MENU NAVIGATION-->
-    <header class="container__header">
+    <header class="header">
       <div class="header__logotipo"><img src="images/logo-light.svg" alt="" /></div>
       <nav class="header__menu">
-        <ul class="fontes_desfocadas">
-          <li>Funcionalidades</li>
-          <li>App</li>
-          <li>Planos</li>
-          <li>Contato</li>
+        <ul class="header__menu__list fontes_desfocadas">
+          <li class="header__menu__list__item">Funcionalidades</li>
+          <li class="header__menu__list__item">App</li>
+          <li class="header__menu__list__item">Planos</li>
+          <li class="header__menu__list__item">Contato</li>
         </ul>
       </nav>
     </header>
@@ -27,13 +27,13 @@
     <div class="container__banner">
       <div class="banner">
         <div class="banner__text">
-          <h1>
+          <h1 class="banner__text__title">
             Rachi,<br />
             é tudo que você precisa <br />
             em um só lugar.
           </h1>
         </div>
-        <button>Cadastre-se</button>
+        <button class="banner__btn">Cadastre-se</button>
       </div>
       <div class="banner__image">
         <img src="images/hero-illustration.svg" alt="" />
@@ -41,40 +41,44 @@
     </div>
 
     <!--SERVICOS-->
-    <div class="container__servicos">
+    <div class="servicos">
       <h2 class="servicos__titulo">Como funciona</h2>
-      <div class="container__options-services">
-        <div class="options-services__item">
-          <img src="images/icon_1.svg" alt="" />
-          <h3 class="substitulos_destaque">Crie conexões</h3>
-          <p class="fonte-desfocada">Lorem ipsum dolor sit amet, consecteteu.</p>
+      <div class="servicos__options-services">
+        
+        <div class="servicos__options-service__item">
+          <img class="servicos__options-service__item__image" src="images/icon_1.svg" alt="" />
+          <h3 class="servicos__options-service__item__title substitulos_destaque">Crie conexões</h3>
+          <p class="servicos__options-service__item__description fonte-desfocada">Lorem ipsum dolor sit amet, consecteteu.</p>
         </div>
-        <div class="options-services__item">
-          <img src="images/icon_2.svg " alt="" />
-          <h3 class="substitulos_destaque">100% Gratuito</h3>
-          <p class="fonte-desfocada">Lorem ipsum dolor sit amet, consecteteu.</p>
+        
+        <div class="servicos__options-service__item">
+          <img class="servicos__options-service__item__image" src="images/icon_2.svg " alt="" />
+          <h3 class="servicos__options-service__item__title substitulos_destaque">100% Gratuito</h3>
+          <p class="servicos__options-service__item__description fonte-desfocada fonte-desfocada">Lorem ipsum dolor sit amet, consecteteu.</p>
         </div>
-        <div class="options-services__item">
-          <img src="images/icon_3.svg" alt="" />
-          <h3 class="substitulos_destaque">Compartilhamento</h3>
-          <p class="fonte-desfocada">Lorem ipsum dolor sit amet, consecteteu.</p>
+        
+        <div class="servicos__options-service__item">
+          <img class="servicos__options-service__item__image" src="images/icon_3.svg" alt="" />
+          <h3 class="servicos__options-service__item__title substitulos_destaque">Compartilhamento</h3>
+          <p class="servicos__options-service__item__description fonte-desfocada">Lorem ipsum dolor sit amet, consecteteu.</p>
         </div>
+      
       </div>
     </div>
 
     <!--DOWNLOADS-->
-    <div class="container__download">
-      <div class="download__description">
-        <h2 class="titulos_destaque">Baixe nosso app para desfrutar mais!</h2>
-        <p class="fonte-desfocada">
+    <div class="download">
+      <div class="download__text-container">
+        <h2 class="download__text-container__titulo titulos_destaque">Baixe nosso app para desfrutar mais!</h2>
+        <p class="download__text-container__descricao fonte-desfocada">
           Amet in elementum nulla scelerisque dui, egestas at.<br />
           Elit consectetur turpis elementum amet vitae et <br />
           etiam nec. Varius volutpat hac adipiscing tincidunt <br />
           pretium.
         </p>
         <div class="download__options">
-          <img src="images/play-store.svg" alt="" />
-          <img src="images/app-store.svg" alt="" />
+          <img class="download__options__image" src="images/play-store.svg" alt="" />
+          <img class="download__options__image" src="images/app-store.svg" alt="" />
         </div>
       </div>
       <div>
@@ -83,75 +87,80 @@
     </div>
 
     <!--PLANOS-->
-    <div class="container__planos">
-      <div class="planos__description">
-        <h2>Nossos Planos</h2>
-        <p class="fonte-desfocada">
+    <div class="planos">
+      <div class="planos__text-container">
+        <h2 class="planos__text-container__titulo">Nossos Planos</h2>
+        <p class="planos__text-container__descricao fonte-desfocada">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia
           mi quis euismod ultrices.
         </p>
       </div>
-      <div class="planos__options">
-        <div class="planos__options-card">
-          <div class="options-card__plano">
-            <h3>Bronze</h3>
-            <span class="font_precos">R$28/mês</span>
+
+      <div class="planos__card-container">
+        
+        <div class="planos__card-container__card">
+          <div class="planos__card-container__card__head">
+            <h3 class="planos__card-container__card__head__clase">Bronze</h3>
+            <span class="planos__card-container__card__head__valor font_precos">R$28/mês</span>
           </div>
-          <div class="options-card__descricao">
-            <p class="fonte-desfocada">
+          <div class="planos__card-container__card__container-descricao">
+            <p class="planos__card-container__card__container-descricao__descricao">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               lacinia mi quis euismod ultrices.
             </p>
           </div>
-          <div class="options-card__btn">
-            <button>Assinar</button>
+          <div class="planos__card-container__card__container-btn">
+            <button class="planos__card-container__card__container-btn__btn">Assinar</button>
           </div>
         </div>
-        <div class="planos__options-card">
-          <div class="options-card__plano">
-            <h3>Prata</h3>
-            <span class="font_precos">R$57/mês</span>
+        
+        <div class="planos__card-container__card">
+          <div class="planos__card-container__card__head">
+            <h3 class="planos__card-container__card__head__clase">Prata</h3>
+            <span class="planos__card-container__card__head__valor font_precos">R$57/mês</span>
           </div>
-          <div class="options-card__descricao">
-            <p>
+          <div class="planos__card-container__card__container-descricao">
+            <p class="planos__card-container__card__container-descricao__descricao">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               lacinia mi quis euismod ultrices.
             </p>
           </div>
-          <div class="options-card__btn">
-            <button>Assinar</button>
+          <div class="planos__card-container__card__container-btn">
+            <button class="planos__card-container__card__container-btn__btn">Assinar</button>
           </div>
         </div>
-        <div class="planos__options-card">
-          <div class="options-card__plano">
-            <h3>Ouro</h3>
-            <span class="font_precos">R$94/mês</span>
+        
+        <div class="planos__card-container__card">
+          <div class="planos__card-container__card__head">
+            <h3 class="planos__card-container__card__head__clase">Ouro</h3>
+            <span class="planos__card-container__card__head__valor font_precos">R$94/mês</span>
           </div>
-          <div class="options-card__descricao">
-            <p class="fonte-desfocada">
+          <div class="planos__card-container__card__container-descricao">
+            <p class="planos__card-container__card__container-descricao__descricao">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               lacinia mi quis euismod ultrices.
             </p>
           </div>
-          <div class="options-card__btn">
-            <button>Assinar</button>
+          <div class="planos__card-container__card__container-btn">
+            <button class="planos__card-container__card__container-btn__btn">Assinar</button>
           </div>
         </div>
+        
       </div>
     </div>
 
     <!--CONTATO-->
-    <div class="container__contato">
-      <div class="contato__text">
-        <h2>Contato</h2>
-        <p>
+    <div class="contato">
+      <div class="contato__text-container">
+        <h2 class="contato__titulo">Contato</h2>
+        <p class="contato__descricao">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia
           mi quis euismod ultrices.
         </p>
       </div>
-      <div class="contato__campo">
-        <input type="text" placeholder="Digite o seu email" />
-        <button>Enviar</button>
+      <div class="contato__input-container">
+        <input class="contato__input" type="text" placeholder="Digite o seu email" />
+        <button class="contato__button" >Enviar</button>
       </div>
     </div>
 
