@@ -155,12 +155,15 @@ p {
 /*PLANOS*/
 .planos {
   background-color: #fff;
-  padding-bottom: 3rem;
+  padding-bottom: 130px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  box-sizing: border-box;
+
 }
 .planos__text-container {
   text-align: center;
@@ -207,10 +210,8 @@ p {
   align-items: center;
   text-align: center;
 }
-.container__planos > .planos__options > .planos__options-card:nth-child(2) {
-  height: 500px;
+.planos__card-container__card:nth-child(2) {
   background-color: #464f65;
-  color: #fff;
 }
 .planos__card-container__card__container-descricao__descricao {
   color: #6e7275;
@@ -228,6 +229,12 @@ p {
   border-radius: 50px;
   width: 230px;
   font-size: 18px;
+}
+.card-especial{
+    color: #fff;
+}
+.card-especial-descricao{
+    color: #DBDBDB;
 }
 
 /*CONTATO*/
