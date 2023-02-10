@@ -11,21 +11,21 @@ body {
 }
 h2 {
   font-weight: 600;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 2.5rem;
+  line-height: 3.1rem;
   color: #293145;
 }
 h3 {
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .fonte-desfocada {
   color: var(--color-gray);
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 p {
   color: #fff;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 .font_precos {
   font-size: 1.4rem;
@@ -36,19 +36,19 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 135px;
-  margin-right: 135px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   background-color: #fff;
   height: 10vh;
 }
 .header__menu__list {
   display: flex;
-  gap: 66px;
+  gap: 3rem;
 }
 .header__menu__list__item {
   list-style-type: none;
   margin-left: 1rem;
-  font-size: 16px;
+  font-size: 1rem;
   color: #6e7275;
 }
 
@@ -68,12 +68,12 @@ p {
   }
 }
 .banner {
-  padding: 38px 20px;
+  padding: 2.3rem 1.25rem;
 }
 .banner__text__title {
   font-weight: 600;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 3rem;
+  line-height: 3.75rem;
   color: #293145;
 }
 .banner__btn {
@@ -82,9 +82,9 @@ p {
   color: #fff;
   border: none;
   padding: 1.1rem 2.25rem;
-  width: 200px;
-  height: 56px;
-  border-radius: 50px;
+  width: 12.5rem;
+  height: 3rem;
+  border-radius: 3rem;
   font-weight: bolder;
   font-size: 1rem;
 }
@@ -95,17 +95,16 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 1.5rem;
   box-sizing: border-box;
-  padding-top: 10rem;
-  padding-bottom: 15rem;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
 }
 
 .servicos__titulo {
   text-align: center;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   color: #293145;
 }
 
@@ -130,14 +129,14 @@ p {
 }
 .servicos__options-service__item__title {
   font-weight: 600;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1rem;
+  line-height: 1.4rem;
   color: #293145;
 }
 .servicos__options-service__item__description {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.6rem;
   color: #6e7275;
 }
 
@@ -164,8 +163,8 @@ p {
 }
 .download__text-container__titulo {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 2rem;
+  line-height: 2.5rem;
   color: #293145;
 }
 .download__text-container__descricao {
@@ -181,8 +180,8 @@ p {
 /*PLANOS*/
 .planos {
   background-color: #fff;
-  padding-bottom: 130px;
-  padding-top: 50px;
+  padding-bottom: 8rem;
+  padding-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,26 +195,26 @@ p {
 }
 .planos__text-container__titulo {
   font-weight: 600;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 2.5rem;
+  line-height: 3rem;
   color: #293145;
 }
 .planos__text-container__descricao {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #6e7275;
 }
 
 .planos__card-container__card__head__clase {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   color: #293145;
 }
 .planos__card-container__card__head__valor {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 59px;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
   color: #293145;
 }
 .planos__card-container {
@@ -234,12 +233,12 @@ p {
   }
 }
 .planos__card-container__card {
-  height: 470px;
+  height: 29rem;
   width: 30vw;
   padding: 2rem;
   background-color: #eff8ff;
-  margin-right: 10px;
-  border-radius: 10px;
+  margin-right: .6rem;
+  border-radius: .6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -253,19 +252,19 @@ p {
 .planos__card-container__card__container-descricao__descricao {
   color: #6e7275;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }
 .planos__card-container__card__container-btn__btn {
   background-color: var(--color-blue);
   border: none;
-  padding: 8px 80px;
-  width: 230px;
-  height: 43px;
+  padding: .5rem 5rem;
+  width: 14rem;
+  height: 2.6rem;
   color: #fff;
-  border-radius: 50px;
-  width: 230px;
-  font-size: 18px;
+  border-radius: 3rem;
+  width: 14rem;
+  font-size: 1rem;
 }
 .card-especial{
     color: #fff;
@@ -289,13 +288,13 @@ p {
 .contato__titulo {
   color: #fff;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 .contato__descricao {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #dbdbdb;
 }
 .contato__input-container {
@@ -320,11 +319,11 @@ p {
   border: none;
   background-color: var(--color-blue);
   color: #fff;
-  padding: 8px 32px;
-  width: 118px;
-  height: 38px;
-  border-radius: 50px;
-  font-size: 16px;
+  padding: .5rem 2rem;
+  width: 7rem;
+  height: 2.3rem;
+  border-radius: 3rem;
+  font-size: 1rem;
 }
 
 /*RODAPE*/
