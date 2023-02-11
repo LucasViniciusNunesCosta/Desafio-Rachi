@@ -61,12 +61,6 @@ p {
   height: 92vh;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 900px) {
-  .container__banner{
-    flex-direction: column;
-    height: auto;
-  }
-}
 .banner {
   padding: 2.3rem 1.25rem;
 }
@@ -87,6 +81,19 @@ p {
   border-radius: 3rem;
   font-weight: bolder;
   font-size: 1rem;
+}
+@media only screen and (max-width: 900px) {
+  .container__banner {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .banner__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*SERVICOS*/
@@ -112,32 +119,36 @@ p {
   display: flex;
   justify-content: space-around;
 }
-@media only screen and (max-width: 900px) {
-  .servicos__options-services{
-    flex-direction: column;
-    height: auto;
-  }
-  .servicos{
-    height: auto;
-  }
-}
+
 .servicos__options-service__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 }
 .servicos__options-service__item__title {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.4rem;
   color: #293145;
+  margin-bottom: 0;
 }
 .servicos__options-service__item__description {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.6rem;
   color: #6e7275;
+  margin-top: 0;
+}
+@media only screen and (max-width: 900px) {
+  .servicos__options-services {
+    flex-direction: column;
+    height: auto;
+  }
+  .servicos {
+    height: auto;
+  }
 }
 
 /*DOWNLOADS*/
@@ -152,15 +163,7 @@ p {
   padding-top: 15rem;
   padding-bottom: 15rem;
 }
-@media only screen and (max-width: 900px) {
-  .download{
-    flex-direction: column;
-    height: auto;
-  }
-  .download__container-ilustration{
-    display: none;
-  }
-}
+
 .download__text-container__titulo {
   font-weight: 600;
   font-size: 2rem;
@@ -176,6 +179,27 @@ p {
 .download__options__image {
   margin-right: 0.8rem;
 }
+@media only screen and (max-width: 900px) {
+  .download {
+    flex-direction: column;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .download__container-ilustration {
+    display: none;
+  }
+  .download__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .download__options {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 
 /*PLANOS*/
 .planos {
@@ -188,7 +212,7 @@ p {
   flex-direction: column;
   gap: 2rem;
   box-sizing: border-box;
-
+  width: 100%;
 }
 .planos__text-container {
   text-align: center;
@@ -222,23 +246,13 @@ p {
   justify-content: center;
   gap: 2rem;
 }
-@media only screen and (max-width: 900px) {
-  .planos__card-container{
-    flex-direction: column;
-    height: auto;
-    align-items : center;
-  }
-  .planos__card-container__card{
-    width: 80vw;
-  }
-}
 .planos__card-container__card {
   height: 29rem;
   width: 30vw;
   padding: 2rem;
   background-color: #eff8ff;
-  margin-right: .6rem;
-  border-radius: .6rem;
+  margin-right: 0.6rem;
+  border-radius: 0.6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -258,7 +272,7 @@ p {
 .planos__card-container__card__container-btn__btn {
   background-color: var(--color-blue);
   border: none;
-  padding: .5rem 5rem;
+  padding: 0.5rem 5rem;
   width: 14rem;
   height: 2.6rem;
   color: #fff;
@@ -266,11 +280,22 @@ p {
   width: 14rem;
   font-size: 1rem;
 }
-.card-especial{
-    color: #fff;
+.card-especial {
+  color: #fff;
 }
-.card-especial-descricao{
-    color: #DBDBDB;
+.card-especial-descricao {
+  color: #dbdbdb;
+}
+@media only screen and (max-width: 900px) {
+  .planos__card-container {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    width: 100vw;
+  }
+  .planos__card-container__card {
+    width: 80vw;
+  }
 }
 
 /*CONTATO*/
@@ -319,11 +344,25 @@ p {
   border: none;
   background-color: var(--color-blue);
   color: #fff;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   width: 7rem;
   height: 2.3rem;
   border-radius: 3rem;
   font-size: 1rem;
+}
+@media only screen and (max-width: 900px) {
+  .contato__input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contato__input {
+    width: 80%;
+  }
+  .contato__button {
+    width: 60%;
+  }
 }
 
 /*RODAPE*/
